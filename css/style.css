@@ -131,31 +131,78 @@ header .container {
   transform: translate(0%, 30%);
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  /* align-items: center; */
 }
 header .container .intro {
   color: white;
   line-height: 2;
+  position: relative;
 }
 header .container .intro h3,
 header .container .intro h2 {
   font-size: 40px;
-  padding-top: 0px;
+  padding-top: 20px;
+  width: 400px;
+}
+header .container .intro h2 {
+  display: none;
+}
+header:hover .container .intro h2 {
+  display: block;
+  animation-name: display;
+  animation-duration: 3s;
+}
+@keyframes display {
+  0% {
+    position: relative;
+    top: -40px;
+  }
+  50% {
+    position: relative;
+    top: 0;
+  }
 }
 header .container .intro p {
   font-size: 20px;
   width: 400px;
+  position: absolute;
+  left: -200%;
+}
+header:hover .container .intro p {
+  animation-name: displayp;
+  animation-duration: 15s;
+  animation-delay: 3s;
+}
+@keyframes displayp {
+  0% {
+    left: -10%;
+  }
+  10% {
+    left: 0%;
+  }
+  100% {
+    left: 0%;
+  }
 }
 header .container .img {
   width: 350px;
 }
 @media (max-width: 767px) {
+  header .container {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    height: 350px;
+  }
   header .container .img {
-    display: none;
+    width: 80px;
+  }
+  header .container .intro {
+    height: 200px;
+    width: 400px;
   }
   header .container .intro p {
-    font-size: 16px;
-    width: 250px;
+    font-size: 18px;
+    width: 300px;
   }
 }
 header .container img {
