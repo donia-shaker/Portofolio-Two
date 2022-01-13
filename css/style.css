@@ -218,6 +218,7 @@ header:hover .container .intro p {
 }
 header .container .img {
   width: 350px;
+  position: relative;
 }
 @media (max-width: 767px) {
   header .container {
@@ -284,7 +285,7 @@ section.about .info .boxes img {
 section.about .info .boxes p {
   text-align: center;
   padding: 20px 0;
-  color: #555;
+  color: var(--main-color);
   font-weight: bold;
 }
 /* end about Section */
@@ -292,7 +293,6 @@ section.about .info .boxes p {
 section.services {
   color: white;
   line-height: 2;
-  margin-top: 20px;
   background-color: #111;
 }
 section.services .content {
