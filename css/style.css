@@ -296,7 +296,7 @@ section.services {
   background-color: #111;
 }
 section.services .content {
-  padding: 40px;
+  padding: 40px 0;
 }
 section.services .content h2 {
   font-size: 50px;
