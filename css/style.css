@@ -72,7 +72,7 @@ input[type="checkbox"] {
 label {
   padding: 17px 20px;
   border-radius: 10px;
-  left: -100px;
+  left: -90px;
   border: none;
   background-color: #ffffff;
   box-shadow: 4px 4px 5px inset #aaa, -4px -4px 5px inset white;
@@ -174,7 +174,7 @@ header .container .intro h3,
 header .container .intro h2 {
   font-size: 40px;
   padding-top: 20px;
-  width: 400px;
+  width: 350px;
 }
 header .container .intro h2 {
   display: none;
@@ -196,7 +196,7 @@ header:hover .container .intro h2 {
 }
 header .container .intro p {
   font-size: 20px;
-  width: 400px;
+  width: 350px;
   position: absolute;
   left: -200%;
 }
@@ -231,7 +231,7 @@ header .container .img {
   }
   header .container .intro {
     height: 200px;
-    width: 400px;
+    width: 350px;
   }
   header .container .intro p {
     font-size: 18px;
