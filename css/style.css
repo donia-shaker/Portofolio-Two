@@ -334,7 +334,7 @@ section.services .info .boxes a img {
 }
 .touch-with-us h3 {
   font-size: 60px;
-  text-transform: capitalize;
+  text-transform: uppercase;
   margin-bottom: 20px;
   color: #333;
   text-align: center;
