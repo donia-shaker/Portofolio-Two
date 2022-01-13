@@ -1,3 +1,7 @@
+:root {
+  --background-color: #fff;
+  --main-color: #333;
+}
 /* Start Global Element */
 * {
   -moz-box-sizing: border-box;
@@ -59,6 +63,40 @@ nav .logo {
   margin-left: 20px;
   font-size: 26px;
 }
+/* Add Dark Mode */
+input[type="checkbox"] {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+label {
+  padding: 17px 20px;
+  border-radius: 10px;
+  left: -100px;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 4px 4px 5px inset #aaa, -4px -4px 5px inset white;
+  position: relative;
+  color: white;
+  z-index: 3;
+}
+label::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #777;
+  position: absolute;
+  border-radius: 70px;
+  top: 15px;
+  left: 15px;
+  transition: 0.5s;
+  top: 8px;
+}
+input:checked + label:after {
+  left: calc(100% - 19px);
+  transform: translateX(-100%);
+}
+/* end dark mode */
 nav .container .links i {
   margin-right: 20px;
   color: white;
@@ -207,12 +245,12 @@ header .container img {
 /* start about Section */
 section.about {
   padding: 60px 0;
-  background-color: #fff;
+  background-color: var(--background-color);
   text-align: center;
 }
 section.about h2 {
   font-size: 80px;
-  color: #333;
+  color: var(--main-color);
 }
 @media (max-width: 767px) {
   section.about h2 {
@@ -329,14 +367,14 @@ section.services .info .boxes a img {
 /* end services Section */
 /* Start Touch With Us */
 .touch-with-us {
-  background-color: #fff;
+  background-color: var(--background-color);
   padding: 60px 0;
 }
 .touch-with-us h3 {
   font-size: 60px;
   text-transform: uppercase;
   margin-bottom: 20px;
-  color: #333;
+  color: var(--main-color);
   text-align: center;
 }
 .touch-with-us .content {
@@ -416,6 +454,7 @@ section.services .info .boxes a img {
   padding: 10px;
   border-radius: 3px;
   width: calc(95% / 2);
+  color: var(--main-color);
 }
 @media (max-width: 767px) {
   .touch-with-us .content .form form input {
@@ -437,6 +476,7 @@ section.services .info .boxes a img {
   width: 100%;
   height: 140px;
   max-width: 100%;
+  color: var(--main-color) !important;
 }
 /* End Touch With Us */
 /* start footer */
