@@ -446,6 +446,14 @@ section.services .info .boxes a img {
     flex-direction: column;
   }
 }
+/* this code for check validation */
+.touch-with-us .content .form form span {
+  display: block;
+  color: red;
+  font-size: 12px;
+  position: relative;
+  top: -10px;
+}
 .touch-with-us .content .form form input {
   outline: none;
   margin-bottom: 20px;

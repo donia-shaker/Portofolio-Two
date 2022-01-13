@@ -193,18 +193,51 @@
               </div>
             </div>
           </div>
+          <!-- Form -->
           <div class="form">
-            <form action="">
+            <form id="contact-form">
+              <!-- line 1 in form -->
               <div class="line">
-                <input type="text" name="name" placeholder="Your Name" />
-                <input type="text" name="phone" placeholder="Phone" />
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Your Name"
+                />
+                <span id="error-name"></span>
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  placeholder="Phone"
+                />
+                <span id="error-phone"></span>
               </div>
+              <!-- line 2 in form -->
               <div class="line">
-                <input type="email" name="email" placeholder="Mail" />
-                <input type="url" name="website" placeholder="Website" />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Mail"
+                />
+                <span id="error-email"></span>
+                <input
+                  type="url"
+                  name="website"
+                  id="url"
+                  placeholder="Website"
+                />
+                <span id="error-url"></span>
               </div>
-              <textarea name="message" placeholder="Message"></textarea>
-              <input type="submit" />
+              <!-- line 3 in form -->
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Message"
+              ></textarea>
+              <span id="error-message"></span>
+              <input type="submit" id="submit" />
             </form>
           </div>
         </div>
