@@ -1,7 +1,7 @@
 //function of Dark-Light Mode
+var action = document.getElementById("action"); //add action to image
 function changeMode() {
   var checkBox = document.getElementById("switch");
-  var action = document.getElementById("action"); //add action to image
   if (checkBox.checked) {
     document.documentElement.style.setProperty("--background-color", "#111");
     document.documentElement.style.setProperty("--main-color", "#fff");
@@ -12,6 +12,16 @@ function changeMode() {
     action.style.opacity = "1"; //add action to image
   }
 }
+// add Action On Image
+action.style.transition = "1s linear";
+
+action.addEventListener("mouseover", () => {
+  action.style.transform = "rotateY(180deg) ";
+});
+
+action.addEventListener("mouseout", () => {
+  action.style.transform = "rotateY(0) ";
+});
 
 //check validation
 var userName = document.getElementById("name");
@@ -37,24 +47,34 @@ submit.addEventListener("click", element => {
   if (userName.value == "") {
     errorName.innerHTML = "Your Name Is Not Valid";
     userName.focus();
+  } else {
+    errorName.innerHTML = "";
   }
   // check email
   if (email.value == "") {
     errorEmail.innerHTML = "Your Email Is Not Valid";
     email.focus();
+  } else {
+    errorEmail.innerHTML = "";
   }
   if (message.value == "") {
     errorMessage.innerHTML = "Your Message Is Not Valid";
     message.focus();
+  } else {
+    errorMessage.innerHTML = "";
   }
   // check url
   if (url.value == "") {
     errorUrl.innerHTML = "Your link Is Not Valid";
     url.focus();
+  } else {
+    errorUrl.innerHTML = "";
   }
   // check phone
   if (phone.value.length != "9") {
     errorPhone.innerHTML = "Your Phone Number Is Not Valid";
     phone.focus();
+  } else {
+    errorPhone.innerHTML = "";
   }
 });

@@ -152,6 +152,7 @@ header {
   position: relative;
   height: 100vh;
   background-image: url(../images/background.jpg);
+  background-size: cover;
 }
 header .overlay {
   position: absolute;
@@ -198,7 +199,7 @@ header .container .intro p {
   font-size: 20px;
   width: 350px;
   position: absolute;
-  left: -200%;
+  left: -10000%;
 }
 header:hover .container .intro p {
   animation-name: display-p;
@@ -330,7 +331,7 @@ section.services .info h2 {
 section.services .info .boxes {
   padding: 40px 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 section.services .info .boxes a {
   position: relative;
@@ -383,6 +384,9 @@ section.services .info .boxes a img {
   justify-content: space-between;
 }
 @media (max-width: 767px) {
+  .touch-with-us h3 {
+    font-size: 38px;
+  }
   .touch-with-us .content {
     flex-direction: column;
     align-items: center;
