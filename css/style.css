@@ -167,6 +167,7 @@ header .container {
   justify-content: space-around;
 }
 header .container .intro {
+  flex-grow: 1.2;
   color: white;
   line-height: 2;
   position: relative;
@@ -175,7 +176,8 @@ header .container .intro h3,
 header .container .intro h2 {
   font-size: 40px;
   padding-top: 20px;
-  width: 350px;
+  min-width: 350px;
+  max-width: 350px;
 }
 header .container .intro h2 {
   display: none;
@@ -197,7 +199,8 @@ header:hover .container .intro h2 {
 }
 header .container .intro p {
   font-size: 20px;
-  width: 350px;
+  min-width: 300px;
+  max-width: 430px;
   position: absolute;
   left: -10000%;
 }
@@ -205,6 +208,7 @@ header:hover .container .intro p {
   animation-name: display-p;
   animation-duration: 15s;
   animation-delay: 2s;
+  animation-fill-mode: forwards;
 }
 @keyframes display-p {
   0% {
