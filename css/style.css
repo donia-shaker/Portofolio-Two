@@ -57,6 +57,8 @@ nav .container {
   position: relative;
 }
 nav .logo {
+  display: flex;
+  align-items: center;
   width: 60px;
   color: white;
   font-weight: bold;
@@ -70,27 +72,25 @@ input[type="checkbox"] {
   visibility: hidden;
 }
 label {
-  padding: 17px 20px;
-  border-radius: 10px;
-  left: -90px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  margin-left: 10px;
   border: none;
   background-color: #ffffff;
   box-shadow: 4px 4px 5px inset #aaa, -4px -4px 5px inset white;
-  position: relative;
   color: white;
-  z-index: 3;
+  position: relative;
 }
 label::after {
   content: "";
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 17px;
   background-color: #777;
   position: absolute;
   border-radius: 70px;
-  top: 15px;
-  left: 15px;
+  left: 18px;
   transition: 0.5s;
-  top: 8px;
+  top: 3px;
 }
 input:checked + label:after {
   left: calc(100% - 19px);
